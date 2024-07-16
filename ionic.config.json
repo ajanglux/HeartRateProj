@@ -1,0 +1,7 @@
+{
+  "name": "HeartRateProj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
