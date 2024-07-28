@@ -12,6 +12,7 @@ import { IonicModules } from 'src/app/modules/ionic.module';
 export class Folder2Page implements OnInit {
   constructor() {}
 
+  // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit() {
   }
 }

@@ -1,0 +1,57 @@
+.toolbar-container {
+    padding-inline-start: var(--padding-start);
+    padding-inline-end: var(--padding-end);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: var(--min-height);
+    contain: content;
+    overflow: hidden;
+    z-index: 10;
+    box-sizing: border-box;
+    background-color: #98C1D9FF;
+}
+#background-content {
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top)* -1);
+    bottom: calc(var(--offset-bottom)* -1);
+    position: absolute;
+    background: var(--background);
+}
+
+.scroll-y {
+    overflow-y: var(--overflow);
+    overscroll-behavior-y: contain;
+}
+
+
+.scroll-y, .scroll-x {
+    z-index: 0;
+    will-change: scroll-position;
+}
+
+.inner-scroll {
+    left: 0px;
+    right: 0px;
+    top: calc(var(--offset-top)* -1);
+    bottom: calc(var(--offset-bottom)* -1);
+    padding-inline-start: var(--padding-start);
+    padding-inline-end: var(--padding-end);
+    padding-top: calc(var(--padding-top) + var(--offset-top));
+    padding-bottom: calc(var(--padding-bottom) + var(--keyboard-offset) + var(--offset-bottom));
+    position: relative;
+    color: var(--color);
+    box-sizing: border-box;
+    overflow: hidden;
+    touch-action: pan-x pan-y pinch-zoom;
+    background-color: #98C1D9FF;
+}
+.inner-scroll.scroll-y{
+    background-color: #E0FBFCFF;
+}
